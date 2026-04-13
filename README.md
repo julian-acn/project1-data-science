@@ -27,3 +27,10 @@ the variation.
 
 ## Acknowledgments
 Dataset provided by Stack Overflow Developer Survey.
+
+
+## Dataset
+The dataset is not included in the repository due to GitHub file size limits (>100MB).
+Download the Stack Overflow Developer Survey CSV and place it in:
+
+data/survey_results_public.csv
