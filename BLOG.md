@@ -1,32 +1,59 @@
 # What Influences Developer Salaries? (Stack Overflow Survey)
 
-![Header](img/workexp_vs_comp.png)
+![Thumbnail](img/blog_thumbnail.png)
 
-## Questions
-1) Does work experience influence yearly compensation?  
-2) Is job satisfaction related to compensation?  
-3) Can we predict compensation using a simple model?
+## Questions (and hypotheses)
+### Q1) Does work experience influence yearly compensation?
+**Hypothesis:** More work experience is associated with higher compensation.
 
-## Findings (non-technical)
-**1) Experience matters, but it’s not the whole story.**  
-In general, developers with more work experience tend to report higher yearly compensation.
+### Q2) Is job satisfaction related to compensation?
+**Hypothesis:** Higher job satisfaction is associated with higher compensation.
 
-**2) Job satisfaction shows a relationship, but it’s not a perfect signal.**  
-Satisfaction may reflect work conditions, but salaries are also shaped by many other factors.
+### Q3) Can we predict compensation using a simple model?
+**Hypothesis:** A simple model can estimate compensation, but it will not fully explain salary differences.
 
-**3) A simple model can estimate, but it can’t fully explain salaries.**  
-Using only a few variables, the model captures only a small part of salary differences.  
-This suggests that location, role, and company characteristics matter a lot too.
+---
 
-### Visualization
+## Results (non-technical)
+
+### Q1) Work experience vs yearly compensation
+**Result:** Compensation generally increases with work experience, but results vary widely across individuals.  
+**Conclusion vs hypothesis:** ✅ Supports the hypothesis (overall upward trend), but experience alone is not enough to explain salary.
+
+**Visualization:**  
 ![Work Experience vs Compensation](img/workexp_vs_comp.png)
 
-**Insight:** The plot shows a general upward trend: more work experience tends to be associated with higher yearly compensation, but the spread is wide—suggesting other factors (role, location, company) also play a big role.
+**What this means for stakeholders:**  
+More experience is usually linked to higher pay, but the wide spread suggests other factors (such as role, location, and company) also strongly influence compensation.
 
-## Predictive scenario
-For example, a developer with 10 years of work experience, 8 years of coding experience,  
-and a job satisfaction score of 7 is predicted to earn around **$68k/year**.
+---
 
-## Conclusion
-This analysis shows how a few measurable factors relate to compensation,  
-while also highlighting that salary is influenced by many variables not included here.
+### Q2) Job satisfaction vs yearly compensation
+**Result:** Job satisfaction shows a relationship with compensation, but it is weak/noisy and not a reliable signal by itself.  
+**Conclusion vs hypothesis:** ⚠️ Partially supports the hypothesis, but not strongly (relationship is not consistent).
+
+**Visualization:**  
+![Job Satisfaction vs Compensation](img/jobsat_vs_comp.png)
+
+**What this means for stakeholders:**  
+Higher satisfaction can appear alongside higher pay in some cases, but many highly paid respondents still report lower satisfaction (and vice versa), so satisfaction alone should not be used to infer salary.
+
+---
+
+### Q3) Simple model: predicted vs actual compensation
+**Result:** The model can produce a rough estimate, but many predictions differ substantially from actual salaries.  
+**Conclusion vs hypothesis:** ✅ Supports the hypothesis (some explanatory power, but clearly incomplete).
+
+**Visualization:**  
+![Predicted vs Actual Compensation](img/pred_vs_actual.png)
+
+**What this means for stakeholders:**  
+Even with experience and satisfaction, salary remains hard to predict accurately. This suggests that key drivers not included here (e.g., location, role, seniority, company size) likely explain a large part of salary differences.
+
+---
+
+## Example scenario (from the notebook)
+A developer with **10 years of work experience**, **8 years of coding experience**, and a **job satisfaction score of 7** is predicted to earn around **$68k/year**.
+
+## Final takeaway
+Work experience matters, job satisfaction has a weaker signal, and a simple model is useful as a baseline—but salary is shaped by multiple additional factors not captured in this small subset.
