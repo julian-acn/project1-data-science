@@ -2,11 +2,18 @@
 
 ## Motivation
 This project analyzes data from the Stack Overflow Developer Survey to explore
-factors that influence developers' yearly compensation.
+factors that influence developers' yearly compensation and to build a simple
+baseline model for prediction.
+
+## Blog Post
+Read the blog here: BLOG.md
 
 ## Dataset
-The dataset comes from the Stack Overflow 2025 Developer Survey and contains
-thousands of responses from developers worldwide.
+The dataset is **not included** in the repository due to GitHub file size limits (>100MB).
+GitHub blocks files larger than 100 MiB.  
+Download the Stack Overflow Developer Survey CSV and place it in:
+
+data/survey_results_public.csv
 
 ## Libraries Used
 - pandas
@@ -15,22 +22,16 @@ thousands of responses from developers worldwide.
 - matplotlib
 - seaborn
 
-## Files
+## Repository Structure
 - analysis.ipynb: Data analysis, model training, evaluation, and predictions
-- data/survey_results_public.csv: Original dataset
+- BLOG.md: Blog post with findings and visualization
+- img/: Images used in the blog (e.g., workexp_vs_comp.png)
+- .gitignore: Excludes large dataset file and other non-tracked items
 
 ## Summary of Results
 A linear regression model was trained to predict yearly compensation based on
-experience and job satisfaction. The results show that salary is influenced by
-multiple factors and that experience alone explains only a small portion of
-the variation.
+experience and job satisfaction. The results suggest compensation is influenced by
+many factors beyond these baseline features.
 
 ## Acknowledgments
 Dataset provided by Stack Overflow Developer Survey.
-
-
-## Dataset
-The dataset is not included in the repository due to GitHub file size limits (>100MB).
-Download the Stack Overflow Developer Survey CSV and place it in:
-
-data/survey_results_public.csv
